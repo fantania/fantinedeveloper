@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <link id="favicon" rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style rel="stylesheet" type="text/css">
+      #main-footer {
+        background: #2bbbad;
+        color: #fff;
+      }
+
+      .fas,
+      .fab {
+        color: #2bbbad;
+      }
+
+      #home-icons h3 {
+        color: #2bbbad;
+      }
+
+      .border-3 {
+        border-style: solid;
+        border-width: 5px !important;
+      }
+
+      #about .row {
+        color: #333333;
+      }
+
+      .navbar-default {
+        background-color: #2bbbad;
+      }
+      .navbar-default a {
+        color: #fff;
+      }
+    </style>
+    <title>Fantania Website</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-expand-sm fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="img/logo1.png" width="90" height="90" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
+        </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="services.html" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a href="blog.html" class="nav-link">APIs</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.php" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header id="page-header">
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <h1>African-countries-REST-API</h1>
+            <h5>
+              This API gives you the ability to search african countries by the following:
+            </h5>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- BLOG SECTION -->
+    <section id="blog" class="py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <!--<div class="card-columns">-->
+              <div class="card">
+                <div class="card-header bg-secondary text-white">
+                  <h3>African Countries API</h3>
+                </div>
+                <img src="img/map1.png" alt="" class="img-fluid card-img-top" />
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a REST API fro African  to search for countries, you can use it to search for African countries
+                  </p>
+                </div>
+             <!-- </div>-->
+            </div>
+          </div>
+            <div class="col">
+              <table class="table">
+                <thead class="bg-secondary text-white">
+                  <tr>
+                    <th scope="col">search By</th>
+                    <th scope="col">End Point</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Search by name(partial name) it returns one country, eg: Ivory Coast is the country name:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/name/Côte d'Ivoire" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/name/Côte d'Ivoire</a></td>
+                  </tr>
+                  <tr>
+                    <td>Search by capital(the country capital) returns one country, eg: Yamoussoukro is Ivory Coast capital:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/capital/Yamoussoukro" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/capital/Yamoussoukro</a></td>
+                  </tr>
+                  <tr>
+                    <td>Search by Calling Code it returns one country, eg: 225 is the calling call of Ivory Coast:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/callingcode/225" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/callingcode/225</a></td>
+                  </tr>
+
+                  <tr>
+                    <td>Search by alpha3Code it returns one country, eg: CIV is Ivory Coast alpha3Code:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/alpha3code/CIV" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/alpha3code/CIV</a></td>
+                  </tr>
+                  <tr>
+                    <td>Search by subregion, it returns a list of countries: there are 5 sub rebregion in Africa: a)Middle Africa b)Southern Africa c)Western Africa d)Northern Africa e)Eastern Africa eg:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/subregion/Western Africa" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/subregion/Western Africa</a></td>
+                  </tr>
+                  <tr>
+                    <td>Search by language: it returns a list of countries, eg:</td>
+                    <td><a href="https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/language/french" target="_blank">https://africanountriesapi.herokuapp.com/africanCountries/rest/v1/language/french</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p>Copyright &copy; <span id="year"></span> Fantania</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $("#year").text(new Date().getFullYear());
+    </script>
+  </body>
+</html>
